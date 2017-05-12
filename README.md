@@ -34,7 +34,7 @@ If no argument is given, it will return the innerHTML of the first element and i
 
 ##### `.empty`
 
-Empties the innerHTML of each element.
+Empties the innerHTML of each element by setting it to an empty string.
 
 ##### `.append(child)`
 
@@ -56,15 +56,15 @@ Removes class from each of the  elements.
 
 ##### `.remove()`
 
-Removes each of the element itself from the DOM.
+Removes each of the element in the collection from the DOM by setting the outerHTML as an empty string.
 
 ##### `.on(eventType, callback)`
 
-Adds a listener to each of the elements in the boreDOM collection.
+Adds a listener to each of the elements in the boreDOM collection by storing the callback as a value of the eventType property.
 
 ##### `.off(eventType)`
 
-Removes the event listener based on the event type on the elements.
+Removes the event listener based on the event type on the elements by checking the eventType property of the element and removing the callback.
 
 ### Trigger callbacks when document is ready
 
